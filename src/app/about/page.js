@@ -4,6 +4,8 @@ import ReusableCountUp from "@/components/counter";
 import Link from "next/link";
 import HeaderAbout from "../../components/HeaderAbout"
 import Footer from "@/components/Footer";
+import Testimonial1 from "../crescoComponent/Testimonial";
+import TSection from "../crescoComponent/TSection";
 
 export default function About() {
   return (
@@ -110,18 +112,19 @@ export default function About() {
                     <div className="position-relative">
                       <div className="line-shape" />
                       <img
-                        src="assets/img/about/CEO.png"
+                        src="assets/img/about/d1.jpg"
                         className="img-fluid rounded-3 position-relative"
                         alt=""
                       />
                     </div>
                   </div>
+                  
                   <div className="col-6">
                     <div className="row g-3 g-sm-4">
                       {/* Image */}
                       <div className="col-12">
                         <img
-                          src="assets/img/about/02.jpg"
+                          src="assets/img/about/d2.jpg"
                           className="img-fluid rounded-3"
                           alt=""
                         />
@@ -129,7 +132,7 @@ export default function About() {
                       {/* Image */}
                       <div className="col-12">
                         <img
-                          src="assets/img/about/03.jpg"
+                          src="assets/img/about/d3.jpg"
                           className="img-fluid rounded-3"
                           alt=""
                         />
@@ -177,7 +180,6 @@ export default function About() {
                       — Umer Shauket, CEO
                     </cite>
                     <div className="mt-3 signature">
-                      <img src="assets/img/signature.png" alt="" />
                     </div>
                   </blockquote>
                 </div>
@@ -189,351 +191,14 @@ export default function About() {
         <AboutVideoContainer />
         {/* /. End About Video Section */}
         {/* Start Customers Section */}
-        <div className="py-5 bg-gradient-primary border-bottom">
-          <div className="container py-4">
-            <div className="row justify-content-center">
-              <div className="col-md-10">
-                {/* Start Section Header Title */}
-                <div className="section-header text-center mb-5">
-                  {/* Start Subtitle */}
-                  <div className="bg-soft-primary d-inline-block fw-medium mb-3 rounded-pill section-header__subtitle text-capitalize text-primary">
-                    Our Customers
-                  </div>
-                  {/* /. End Subtitle */}
-                  {/* Start Section Header title */}
-                  <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize">
-                    Trusted by{" "}
-                    <span className="underline position-relative text-primary">
-                      thousands
-                    </span>{" "}
-                    of companies
-                  </h2>
-                  {/* /.End Section Header Title */}
-                  {/* Start Section Header Sub Title */}
-                  <div className="sub-title fs-16">
-                    Our guests always travel the world in style. Mention
-                    @Kempinski
-                    <br className="d-none d-lg-block" /> on Instagram for a
-                    chance to be featured!
-                  </div>
-                  {/* /.End Section Header Sub Title */}
-                </div>
-                {/*/. End Section Header */}
-              </div>
-            </div>
-            <div className="row align-items-center justify-content-center g-4 g-xl-5">
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/01.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/02.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/03.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/04.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/05.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/06.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/07.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-              <div className="col-6 col-sm-3 col-xxl text-center">
-                <div className="customer-logo">
-                  <img
-                    src="assets/img/brand-logo/08.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+     <Testimonial1/>
         {/* /. End Customers Section */}
         {/* Start Team Content */}
-        <div className="py-5 team-content">
-          <div className="container py-4">
-            <div className="align-items-end row g-4 mb-5">
-              <div className="col">
-                {/* Start Section Header Title */}
-                <div className="section-header text-center text-xl-start">
-                  {/* Start Subtitle */}
-                  <div className="bg-soft-primary d-inline-block fw-medium mb-3 rounded-pill section-header__subtitle text-capitalize text-primary">
-                    Our Team
-                  </div>
-                  {/* /. End Subtitle */}
-                  {/* Start Section Header title */}
-                  <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize">
-                    Meet our{" "}
-                    <span className="underline position-relative text-primary">
-                      team
-                    </span>
-                  </h2>
-                  {/* /.End Section Header Title */}
-                  {/* Start Section Header Sub Title */}
-                  <div className="sub-title fs-16">
-                    Our guests always travel the world in style. Mention
-                    @Kempinski
-                    <br className="d-none d-lg-block" /> on Instagram for a
-                    chance to be featured!
-                  </div>
-                  {/* /.End Section Header Sub Title */}
-                </div>
-                {/*/. End Section Header */}
-              </div>
-              <div className="col-12 col-xl-auto text-center text-xl-end">
-                {/* Start Button */}
-                <button
-                  type="button"
-                  className="btn btn-primary d-inline-flex hstack gap-2"
-                >
-                  <span>Brows More Speciality</span>
-                  <span className="vr" />
-                  <i className="fa-arrow-right fa-solid fs-14" />
-                </button>
-                {/* /.End Button */}
-              </div>
-            </div>
-            <div className="row justify-content-center g-3 g-sm-4">
-              <div className="col-sm-6 col-md-6 col-lg-3">
-                {/* Start Card */}
-                <div className="team-member">
-                  <div className="member-header overflow-hidden position-relative rounded-4">
-                    <div className="d-block overflow-hidden position-relative team-avatar-container">
-                      <img
-                        src="assets/img/avatar/01-lg.jpg"
-                        className="img-fluid w-100"
-                        alt=""
-                      />
-                    </div>
-                    <ul className="align-items-center d-flex flex-column fs-21 gap-2 justify-content-center list-unstyled mb-0 member-social position-absolute">
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-facebook-f" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-linkedin-in" />
-                        </Link>
-                      </li>
-                    </ul>
-                    <div className="bg-dark bottom-1 end-1 position-absolute px-3 py-1 rounded-5 team-description-wrap text-white z-1">
-                      Property Advisor
-                    </div>
-                  </div>
-                  {/* Start Avatar Info */}
-                  <div className="member-info text-center mt-3">
-                    <h4 className="mb-2 member-name text-truncate">
-                      Abbas Ibn Firna
-                    </h4>
-                    <div>
-                      The CEO and the regional leader for askexperts consulting
-                      agency.
-                    </div>
-                  </div>
-                  {/* /.End Avatar Info */}
-                </div>
-                {/* /.End Card */}
-              </div>
-              <div className="col-sm-6 col-md-6 col-lg-3">
-                {/* Start Card */}
-                <div className="team-member">
-                  <div className="member-header overflow-hidden position-relative rounded-4">
-                    <div className="d-block overflow-hidden position-relative team-avatar-container">
-                      <img
-                        src="assets/img/avatar/02-lg.jpg"
-                        className="img-fluid w-100"
-                        alt=""
-                      />
-                    </div>
-                    <ul className="align-items-center d-flex flex-column fs-21 gap-2 justify-content-center list-unstyled mb-0 member-social position-absolute">
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-facebook-f" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-linkedin-in" />
-                        </Link>
-                      </li>
-                    </ul>
-                    <div className="bg-dark bottom-1 end-1 position-absolute px-3 py-1 rounded-5 team-description-wrap text-white z-1">
-                      Atomic Properties
-                    </div>
-                  </div>
-                  {/* Start Avatar Info */}
-                  <div className="member-info text-center mt-3">
-                    <h4 className="mb-2 member-name text-truncate">
-                      Edwin Martins
-                    </h4>
-                    <div>
-                      The CEO and the regional leader for askexperts consulting
-                      agency.
-                    </div>
-                  </div>
-                  {/* /.End Avatar Info */}
-                </div>
-                {/* /.End Card */}
-              </div>
-              <div className="col-sm-6 col-md-6 col-lg-3">
-                {/* Start Card */}
-                <div className="team-member">
-                  <div className="member-header overflow-hidden position-relative rounded-4">
-                    <div className="d-block overflow-hidden position-relative team-avatar-container">
-                      <img
-                        src="assets/img/avatar/03-lg.jpg"
-                        className="img-fluid w-100"
-                        alt=""
-                      />
-                    </div>
-                    <ul className="align-items-center d-flex flex-column fs-21 gap-2 justify-content-center list-unstyled mb-0 member-social position-absolute">
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-facebook-f" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-linkedin-in" />
-                        </Link>
-                      </li>
-                    </ul>
-                    <div className="bg-dark bottom-1 end-1 position-absolute px-3 py-1 rounded-5 team-description-wrap text-white z-1">
-                      Property Manager
-                    </div>
-                  </div>
-                  {/* Start Avatar Info */}
-                  <div className="member-info text-center mt-3">
-                    <h4 className="mb-2 member-name text-truncate">
-                      Alexander Kaminski
-                    </h4>
-                    <div>
-                      The CEO and the regional leader for askexperts consulting
-                      agency.
-                    </div>
-                  </div>
-                  {/* /.End Avatar Info */}
-                </div>
-                {/* /.End Card */}
-              </div>
-              <div className="col-sm-6 col-md-6 col-lg-3">
-                {/* Start Card */}
-                <div className="team-member">
-                  <div className="member-header overflow-hidden position-relative rounded-4">
-                    <div className="d-block overflow-hidden position-relative team-avatar-container">
-                      <img
-                        src="assets/img/avatar/07-lg.jpg"
-                        className="img-fluid w-100"
-                        alt=""
-                      />
-                    </div>
-                    <ul className="align-items-center d-flex flex-column fs-21 gap-2 justify-content-center list-unstyled mb-0 member-social position-absolute">
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-facebook-f" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-twitter" />
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="#">
-                          <i className="fab fa-linkedin-in" />
-                        </Link>
-                      </li>
-                    </ul>
-                    <div className="bg-dark bottom-1 end-1 position-absolute px-3 py-1 rounded-5 team-description-wrap text-white z-1">
-                      Property Manager
-                    </div>
-                  </div>
-                  {/* Start Avatar Info */}
-                  <div className="member-info text-center mt-3">
-                    <h4 className="mb-2 member-name text-truncate">
-                      Pranoti Deshpande
-                    </h4>
-                    <div>
-                      The CEO and the regional leader for askexperts consulting
-                      agency.
-                    </div>
-                  </div>
-                  {/* /.End Avatar Info */}
-                </div>
-                {/* /.End Card */}
-              </div>
-            </div>
-          </div>
-        </div>
+       <TSection/>
         {/* /. End Team Content */}
       </div>
       {/* /. End Main Content */}
-      <Footer/>
+      <Footer />
     </div>
   );
 }

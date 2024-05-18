@@ -15,7 +15,7 @@ export default function AboutVideoContainer() {
         <div className="about-video position-relative">
         {/* Image Parallax */}
         <img
-          src="assets/img/about-bg.jpg"
+          src="assets/img/about/d4.jpg"
           alt=""
           className="about-img image-parallax"
         />

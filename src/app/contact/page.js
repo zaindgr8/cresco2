@@ -1,41 +1,17 @@
-import Layout from "@/components/Layout";
+import Footer from "@/components/Footer";
 import GoogleMapsComponent from "@/components/map";
 import Link from "next/link";
+import HeaderAbout from "../../components/HeaderAbout"
 export default function Contact() {
   return (
-    <Layout>
+    <div>
+      <HeaderAbout />
       {/* Start Main Content */}
-      <div className="main-content">
-        <div className="border-bottom py-3">
-          <div className="container">
-            {/* Start Breadcrumbs */}
-            <div className="row gy-2 gx-4 gx-md-5">
-              <h4 className="col-auto fs-18 fw-semibold mb-0 page-title text-capitalize">
-                Contact Us
-              </h4>
-              <div className="border-start col-auto">
-                <ol className="align-items-center breadcrumb fw-medium mb-0">
-                  <li className="breadcrumb-item d-flex align-items-center">
-                    <Link href="/" className="text-decoration-none">
-                      <i className="fa-solid fa-house-chimney-crack fs-18" />
-                    </Link>
-                  </li>
-                  <li
-                    className="breadcrumb-item d-flex align-items-center active"
-                    aria-current="page"
-                  >
-                    Contact
-                  </li>
-                </ol>
-              </div>
-            </div>
-            {/* End Breadcrumbs */}
-          </div>
-        </div>
+      <div className="">
         {/* Start Map Content */}
         <div className="map-content">
           {/* Start Map */}
-          <GoogleMapsComponent className="map border-bottom"/>
+          <GoogleMapsComponent className="map border-bottom" />
           {/* <div id="map" className="map border-bottom" /> */}
           {/* /.End Map */}
         </div>
@@ -52,18 +28,22 @@ export default function Contact() {
                 >
                   <div className="card-body p-4 text-center">
                     <div className="box-icon">
-                      
-                      <i className="fa-headset fa-solid fs-40 mb-4 text-primary" />
+                      <i className="fa-headset fa-solid fs-40 mb-4 text-[#DAB852]" />
                     </div>
-                    <h4>Call us</h4>
+                    <h4>Reach Out</h4>
                     <p className="fs-15">
-                      Many desktop publishing packages and web page editors now use
-                      Lorem.
+                      Let's connect and discuss how we can help you.
                     </p>
                     <div className="d-grid d-xl-flex gap-2 justify-content-center">
-									<div className="border d-inline-block fw-medium px-3 py-1 rounded text-primary"><i className="fa-solid fa-mobile-button me-2"></i>+123 456 789</div>
-									<div className="border d-inline-block fw-medium px-3 py-1 rounded text-primary"><i className="fa-solid fa-phone me-2"></i>+(222)4567 586</div>
-								</div>
+                      <div className="border d-inline-block fw-medium px-3 py-1 rounded ">
+                        <i className="fa-solid fa-mobile-button me-2 text-[#DAB852]"></i>
+                        +971585145243
+                      </div>
+                      <div className="border d-inline-block fw-medium px-3 py-1 rounded ">
+                        <i className="fa-solid fa-phone me-2 text-[#DAB852]"></i>
+                        +971521543532
+                      </div>
+                    </div>
                   </div>
                 </div>
                 {/* /.End Card */}
@@ -77,17 +57,18 @@ export default function Contact() {
                 >
                   <div className="card-body p-4 text-center">
                     <div className="box-icon">
-                      
-                      <i className="fa-envelope-circle-check fa-solid fs-40 mb-4 text-danger" />
+                      <i className="fa-envelope-circle-check fa-solid fs-40 mb-4 text-[#DAB852]" />
                     </div>
-                    <h4>Email us</h4>
+                    <h4>Drop Us an Email</h4>
                     <p className="fs-15">
-                      There are many variations of passages of Lorem Ipsum
-                      available,
+                      Drop us an email and our team will respond promptly.
                     </p>
-                    <Link href="mailto:first.last@example.com" className="fw-medium">
-                      <i className="fa-solid fa-envelope me-2" />
-                      first.last@example.com
+                    <Link
+                      href="mailto:first.last@example.com"
+                      className="fw-medium"
+                    >
+                      <i className="fa-solid fa-envelope me-2 text-[#DAB852]" />
+                      info@crescorealestate.ae
                     </Link>
                   </div>
                 </div>
@@ -102,42 +83,30 @@ export default function Contact() {
                 >
                   <div className="card-body p-4 text-center">
                     <div className="box-icon">
-                      
                       <i className="fa-hashtag fa-solid fs-40 mb-4 text-warning" />
                     </div>
-                    <h4>Social media</h4>
+                    <h4>Join Us on Socials</h4>
                     <p className="fs-15">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered
+                      Connect & join us on socials for the latest updates.
                     </p>
                     {/* Start Social Link */}
-                    <div className="d-flex gap-3 justify-content-center social-links text-md-right">
+                    <div className="d-flex gap-3 justify-content-center social-links text-md-right text-[#DAB852]">
                       <Link
-                        href="#"
+                        target="_blank"
+                        href="https://www.facebook.com/crescorealestateuae"
                         className="fb d-flex align-items-center justify-content-center fs-17 rounded mr-2"
                       >
-                        <i className="fab fa-facebook-f" />
+                        <i className="fab fa-facebook-f " />
                       </Link>
                       <Link
-                        href="#"
-                        className="tw d-flex align-items-center justify-content-center fs-17 rounded mr-2"
-                      >
-                        <i className="fab fa-twitter" />
-                      </Link>
-                      <Link
-                        href="#"
+                        href="https://www.instagram.com/crescorealestate.ae/"
                         className="ins d-flex align-items-center justify-content-center fs-17 rounded mr-2"
                       >
                         <i className="fab fa-instagram" />
                       </Link>
                       <Link
-                        href="#"
-                        className="pr d-flex align-items-center justify-content-center fs-17 rounded mr-2"
-                      >
-                        <i className="fab fa-pinterest-p" />
-                      </Link>
-                      <Link
-                        href="#"
+                        target="_blank"
+                        href="https://www.linkedin.com/company/crescorealestatellc/mycompany/"
                         className="li d-flex align-items-center justify-content-center fs-17 rounded mr-2"
                       >
                         <i className="fab fa-linkedin-in" />
@@ -158,15 +127,15 @@ export default function Contact() {
                 {/* Start Section Header Title */}
                 <div className="section-header text-center mb-5">
                   {/* Start Section Header title */}
-                  <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize">Let us hear from you <span className="underline position-relative text-primary">directly!</span></h2>
+                  <h2 className="h1 fw-semibold mb-3 section-header__title text-capitalize">
+                    Let's connect and make things happen.
+                  </h2>
                   {/* /.End Section Header Title */}
                   {/* Start Section Header Sub Title */}
                   <div className="sub-title fs-16">
-                    
-                    It is a long established fact that a reader will be distracted
-                    by the
-                    <br className="d-none d-lg-block" /> readable content of a page
-                    when looking at its layout.
+                    Reach out to us and let's collaborate to turn your real
+                    estate dreams into reality. Together, we can find
+                    <br /> the perfect property and achieve great things!
                   </div>
                   {/* /.End Section Header Sub Title */}
                 </div>
@@ -179,7 +148,7 @@ export default function Contact() {
                   <div className="col-md-7 pe-xl-5 mb-5 mb-md-0">
                     {/* Start Illustration Image */}
                     <img
-                      src="assets/img/png-img/destination.png"
+                      src="/cresco.png"
                       alt=""
                       className="img-fluid"
                     />
@@ -194,7 +163,7 @@ export default function Contact() {
                           type="text"
                           className="form-control"
                           id="firstName"
-                          placeholder="Naeem Khan"
+                          placeholder="Enter your name"
                           required
                         />
                       </div>
@@ -206,7 +175,7 @@ export default function Contact() {
                           type="email"
                           className="form-control"
                           id="email"
-                          placeholder="hello@email.com"
+                          placeholder="Enter your email"
                           required=""
                         />
                       </div>
@@ -214,7 +183,12 @@ export default function Contact() {
                       {/* Start Form Group */}
                       <div className="form-group mb-4">
                         <label className="required">Your Phone</label>
-                        <input type="number" className="form-control" id="phone" />
+                        <input
+                          type="number"
+                          className="form-control"
+                          id="phone"
+                          placeholder="Enter your contact number"
+                        />
                       </div>
                       {/* /.End Form Group */}
                       {/* Start Form Group */}
@@ -231,7 +205,7 @@ export default function Contact() {
                       {/* Start Submit Button */}
                       <button
                         type="submit"
-                        className="btn btn-primary btn-lg d-inline-flex hstack gap-2"
+                        className="btn text-gray-900 bg-[#DAB852] btn-lg d-inline-flex hstack gap-2"
                       >
                         <span>Send message</span>
                         <span className="vr" />
@@ -246,18 +220,18 @@ export default function Contact() {
           </div>
           {/* Start Section Sketch */}
           <div className="bottom-0 end-0 position-absolute section-sketch">
-            <img
-              src="assets/img/png-img/section-sketch.png"
+            {/* <img
+              src="/cresco.png"
               className="img-fluid"
               alt=""
-            />
+            /> */}
           </div>
           {/* /. End Section Sketch */}
         </div>
         {/* /.End of about section */}
       </div>
       {/* /. End Main Content */}
-    </Layout>
-
+      <Footer/>
+    </div>
   );
 }

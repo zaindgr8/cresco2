@@ -61,7 +61,7 @@ export default function Header() {
           hasLogo ? "has-logo navbar-wrap " : "no-logo navbar-wrap sticky-top"
         }
       >
-        <div className="container-lg mt-5 nav-container position-absolute ">
+        <div className="container-lg mt-5 nav-container position-absolute">
           <nav className="custom-navbar justify-center  navbar-expand-lg ml-16">
             <div className="navbar-collapse" id="navbarSupportedContent">
               {/* Start Navbar Collapse Header */}
@@ -90,11 +90,11 @@ export default function Header() {
                 {/* End Collapse Close Button */}
               </div>
               {/* End Navbar Collapse Header */}
-              <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center h-20 ">
+              <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center h-20 bg-gray-900">
                 <ul className="flex items-center justify-center gap-x-5">
                   <li className={stroma.className}>
                     <Link
-                      className="text-xl text-gray-900 hover:text-yellow-500"
+                      className="text-xl text-white hover:text-yellow-500"
                       href="#"
                       role="button"
                     >
@@ -103,7 +103,7 @@ export default function Header() {
                   </li>
                   <li className={stroma.className}>
                     <Link
-                      className="text-xl text-gray-900 hover:text-yellow-500"
+                      className="text-xl text-white hover:text-yellow-500"
                       href="#who"
                     >
                       Who We Are
@@ -111,7 +111,7 @@ export default function Header() {
                   </li>
                   <li className={stroma.className}>
                     <Link
-                      className="text-xl text-gray-900 hover:text-yellow-500"
+                      className="text-xl text-white hover:text-yellow-500"
                       href="#teamwork"
                     >
                       Teamwork
@@ -134,7 +134,7 @@ export default function Header() {
                   </li>
                   <li className={stroma.className}>
                     <Link
-                      className="text-gray-900 text-xl hover:text-yellow-500"
+                      className="text-white text-xl hover:text-yellow-500"
                       href="#properties"
                     >
                       Properties
@@ -142,7 +142,7 @@ export default function Header() {
                   </li>
                   <li className={stroma.className}>
                     <Link
-                      className="text-gray-900 text-xl hover:text-yellow-500"
+                      className="text-white text-xl hover:text-yellow-500"
                       href="#projects"
                     >
                       Projects
@@ -150,7 +150,7 @@ export default function Header() {
                   </li>
                   <li className={stroma.className}>
                     <Link
-                      className="text-xl text-gray-900 hover:text-yellow-500"
+                      className="text-xl text-white hover:text-yellow-500"
                       href="#getintouch"
                     >
                       Contact Us
