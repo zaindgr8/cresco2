@@ -45,7 +45,7 @@ const FSection = () => {
                 </span>
               </h1>
               {/* Start Main Search Content */}
-              <Dropdown />
+              {/* <Dropdown /> */}
               {/* /.End Main Search Content */}
             </div>
           </div>
